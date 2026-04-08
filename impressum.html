@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum</title>
+
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* ===== BASIS ===== */
+body {
+  background: #0b0b0d;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* SECTION */
+.section {
+  padding: 140px 24px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.link-orange {
+  display: inline-block;
+  margin: 15px 0;
+  color: #f46c1c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-orange:hover {
+  color: #ff7a2f;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="navbar">
+  <div class="nav-inner">
+	<div class="logo" style="--logo-size: 50px;">
+		<img src="images/logo.png" alt="LTronics logo">
+	</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== IMPRESSUM SECTION ===== -->
+<section class="section">
+  <h1>Impressum</h1>
+
+  <p>Angaben gemäß § 5 TMG:</p>
+
+  <p>Betreiber dieser Website:</p>
+  <p>LTronics</p>
+
+  <h4>Vertreten durch</h4>
+  <div style="margin-top: var(--mt, 0px);">
+    <img src="images/adrs.png" alt="adrs" style="max-width:100%; border-radius:6px;">
+  </div>
+
+  <h2>Kontakt</h2>
+  <p> Gerne können Sie über unser Formular direkt Verbindung mit uns aufnehmen:</p>
+  <a href="kontakt.html" class="link-orange">Kontakt</a>
+
+  <h2>Haftungsausschluss</h2>
+  <p>
+    Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+  </p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p>© <span id="year"></span> LTronics</p>
+    </div>
+    <div class="footer-right">
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

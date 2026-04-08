@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LTronics Kontakt</title>
+
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* ===== BASIS ===== */
+body {
+  background: #0b0b0d;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* SECTION */
+.section {
+  padding: 140px 24px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* FORMULAR */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #141418;
+  color: #fff;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  background: #f46c1c;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ff7a2f;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="navbar">
+  <div class="nav-inner">
+	<div class="logo" style="--logo-size: 50px;">
+		<img src="images/logo.png" alt="LTronics logo">
+	</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== KONTAKT SECTION ===== -->
+<section class="section">
+  <h1>Kontakt</h1>
+  <p>Nutzen Sie das Formular, um uns direkt per E-Mail zu erreichen. Alle Felder sind optional, aber hilfreich, damit wir besser antworten können.</p>
+
+  <form class="contact-form" action="mailto:service@LTronics.de" method="post" enctype="text/plain">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="Name" placeholder="Ihr Name">
+
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" name="Email" placeholder="Ihre E-Mail">
+
+    <label for="subject">Betreff</label>
+    <input type="text" id="subject" name="Betreff" placeholder="Betreff">
+
+    <label for="message">Nachricht</label>
+    <textarea id="message" name="Nachricht" rows="6" placeholder="Ihre Nachricht"></textarea>
+
+    <button type="submit">Senden</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p>© <span id="year"></span> LTronics</p>
+    </div>
+    <div class="footer-right">
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

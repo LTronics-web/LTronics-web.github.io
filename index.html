@@ -1,2 +1,350 @@
-<meta http-equiv="refresh" content="0; url=404.html" />
-<p><a href="404.html">Redirect</a></p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Robots / AI restrictions -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
+<meta name="bingbot" content="noindex, nofollow">
+<meta name="ai" content="noai, noimageai">
+	
+<title>LTronics Home</title>
+
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* ===== HERO (mit variablem BG) ===== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    var(--bg, none);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+
+/* ===== FEATURE ===== */
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.feature > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.feature h2 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: #141418;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.grid p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #1c1c22;
+}
+
+/* ===== GENERIC FULL BACKGROUND SECTION ===== */
+.bg-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+
+  background:
+    linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2)),
+    var(--bg);
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== ARTWORK FULLSCREEN ===== */
+.artwork-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px;
+
+  background:
+    linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2)),
+    var(--bg);
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* CONTENT */
+.artwork-content {
+  max-width: 600px;
+}
+
+.artwork-content h2 {
+  font-size: 3rem;
+}
+
+.artwork-content p {
+  color: #ccc;
+  margin: 10px 0 20px;
+}
+
+.artwork-content p2 {
+  color: #ccc;
+  margin: 10px 0 20px;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.artwork-content button {
+  background: #f46c1c;
+  border: none;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.image-slider .img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Oberes Bild */
+.image-slider .img-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Slider Linie */
+.slider-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: white;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+/* Kreis als Griff */
+.slider-handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="navbar">
+  <div class="nav-inner">
+
+    <!-- ✅ LOGO -->
+	<div class="logo" style="--logo-size: 50px;">
+		<img src="images/logo.png" alt="LTronics logo">
+	</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#repair">Intro</a>
+      <a href="#process">Portfolio</a>
+      <a href="#solutions">Lösungen</a>
+      <a href="#visual">Expertise</a>
+      <a href="#footer">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 1 HEADER ===== -->
+<section id="home" class="section hero fade"
+         style="--bg:url('images/CNC.jpg'); background-color:#111;">
+  <div class="hero-content">
+    <h1>LTronics<br>Innovative Steuerungs- & Reparaturlösungen</h1>
+    <p>Wir kombinieren fundiertes technisches Know-how mit praktischer Umsetzung – für individuelle Steuerungen, Geräte und Projekte.</p>
+  </div>
+</section>
+
+<!-- ===== 2 REPAIR ===== -->
+<section id="repair" class="bg-section fade"
+         style="--bg:url('images/Repair.jpg')">
+  <div class="artwork-content">
+    <h2>Reparatur & Instandhaltung</h2>
+    <p2>Von industriellen Maschinen über KFZ-Steuergeräte bis hin zu Messtechnik – wir prüfen, reparieren und optimieren Ihre Steuerungen und Geräte zuverlässig. Und sollte etwas unwiederbringlich defekt sein, können wir mittels reverse engineering ein vollkommen kompatiblen Ersatz entwickeln.</p2>
+  </div>
+</section>
+
+
+<!-- ===== 3 GRID ===== -->
+<section id="process" class="section">
+  <div class="grid">
+    <div class="card fade">
+      <h3>Neuentwicklungen</h3>
+      <p>Wenn Altgeräte nicht mehr instandsetzbar sind, entwickeln wir maßgeschneiderte Lösungen – egal ob Messplattformen, Leiterplatten oder Software für Ihre Projekte.</p>
+    </div>
+    <div class="card fade">
+      <h3>Mechanik & KFZ</h3>
+      <p>Mechanische Reparaturen mit Schwerpunkt Landmaschinen und KFZ. Wir verbinden elektronische Steuerungstechnik mit mechanischem Fachwissen.</p>
+    </div>
+    <div class="card fade">
+      <h3>Vielfältige IT-Anwendungen</h3>
+      <p>Funkschnittstellen, Modellbau, Haustechnik, Programmierung ihrer individuellen Projekte – wir bieten flexible Lösungen für verschiedenste Anforderungen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5 Solutions ===== -->
+<section id="solutions" class="artwork-section fade"
+         style="--bg:url('images/Device.jpg')">
+  <div class="artwork-content">
+    <h2>Technische Expertise</h2>
+    <p2><br>Von Industrietauglicher Steuerungselektronik über Leiterplattendesign bis hin zu Softwareentwicklung – wir bringen Ihre Projekte von der ersten Entwurfsskizze bis zur Kleinserienfertigung und Dokumentation erfolgreich zum Ziel.</p2>
+  </div>
+</section>
+
+<!-- ===== 4 FEATURE ===== -->
+<section id="feature2" class="section feature">
+  <div class="fade">
+    <h2>Eigene Entwicklung, Fertigung und Inbetriebnahme</h2>
+    <p>Mit unserem praxisnahen Ansatz und Methoden entwickeln wir keine Luftschlösser, sondern robuste, im täglichen Einsatz voll zuverlässige Produkte.</p>
+  </div>
+  <div class="image-slider">
+  <img src="images/PCB.jpg" class="img img-before" />
+  <img src="images/PCB-render.png" class="img img-after" />
+
+  <div class="slider-handle"></div>
+  </div>
+</section>
+
+<!-- ===== 5 BG SECTION ===== -->
+<section id="visual" class="artwork-section fade"
+         style="--bg:url('images/Process.png')">
+  <div class="artwork-content">
+    <h2>Technische Expertise</h2>
+    <p2>Mechanisches oder elektrisches CAD, Messdatenerfassung oder Simulation – wir bieten umfassende Lösungen für Ihre technischen Herausforderungen.</p2>
+  </div>
+</section>
+
+
+
+<!-- ===== 6 ARTWORK ===== -->
+<section class="artwork-section fade"
+         style="--bg:url('images/CAD.png')">
+  <div class="artwork-content">
+    <h2>Kontakt & Zusammenarbeit</h2>
+    <p2>Interessiert an unseren Lösungen? Nehmen Sie Kontakt auf und besprechen Sie Ihr Projekt – wir finden die passende Umsetzung.<br><br></p2>
+    <button onclick="location.href='kontakt.html'">Jetzt Kontakt aufnehmen</button>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<section id="footer" class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <p>© <span id="year"></span> LTronics</p>
+    </div>
+
+    <div class="footer-right">
+		<a href="datenschutz.html">Datenschutz</a>
+		<a href="kontakt.html">Kontakt</a>
+		<a href="impressum.html">Impressum</a>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
